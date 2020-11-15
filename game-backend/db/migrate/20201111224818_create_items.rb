@@ -7,6 +7,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer :atk
       t.integer :def
       t.integer :hp
+      t.boolean :character_equipped
 
       t.timestamps
     end

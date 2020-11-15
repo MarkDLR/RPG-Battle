@@ -4,12 +4,12 @@ class CharactersController < ApplicationController
     before_action :authenticate!, only: [:index, :destroy, :update, :show]
 
     def index 
-        if current_player
+        # if current_player
             @characters = Character.all.select{ |c| c.player_id == current_player.id}
             render :json => @characters.as_json(include: [:player, :items, :job]), :status => :ok
-        else
-            render :json => { :msg => "Login first.." }
-        end
+        # else
+            # render :json => { :msg => "Login first.." }
+        # end
     end
 
     def show

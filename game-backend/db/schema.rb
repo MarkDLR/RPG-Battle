@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_11_11_224943) do
     t.integer "atk"
     t.integer "def"
     t.integer "hp"
+    t.boolean "character_equipped"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
