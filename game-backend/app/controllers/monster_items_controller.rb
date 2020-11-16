@@ -1,2 +1,0 @@
-class MonsterItemsController < ApplicationController
-end
