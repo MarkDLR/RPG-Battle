@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import EquipButton from './EquipButton'
+import SellButton from './SellButton'
 
 
 // const Items = (props) => {
@@ -39,7 +40,7 @@ class Items extends React.Component {
       <div className="item">
         <div>{this.props.item.name}</div>
         <EquipButton handleEquip={this.handleEquip} equipped={this.state.equipped}/>
-        
+        <SellButton />
       </div>
     )
 

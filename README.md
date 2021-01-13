@@ -8,3 +8,5 @@ the user can equip and unequip items and the stats will change depending on the 
 Once a character is chosen the user can choose between monster difficulties. Depending on the difficulty a random monster will be chosen in the corresponding array. 
 
 The user can earn items by defeating the monster with the attack button.
+
+set sign up to push to login
