@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_231217) do
     t.integer "def"
     t.integer "hp"
     t.integer "exp"
+    t.integer "gold"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["job_id"], name: "index_characters_on_job_id"
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_231217) do
     t.integer "atk"
     t.integer "def"
     t.integer "hp"
+    t.integer "gold"
     t.boolean "character_equipped"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

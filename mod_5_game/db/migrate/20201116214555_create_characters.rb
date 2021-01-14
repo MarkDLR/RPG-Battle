@@ -9,6 +9,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.integer :def
       t.integer :hp
       t.integer :exp
+      t.integer :gold
 
       t.timestamps
     end
