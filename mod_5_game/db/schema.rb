@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_231217) do
     t.integer "hp"
     t.integer "def"
     t.integer "atk"
+    t.integer "gold"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

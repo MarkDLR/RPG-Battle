@@ -7,6 +7,7 @@ class CreateJobs < ActiveRecord::Migration[6.0]
       t.integer :hp
       t.integer :def
       t.integer :atk
+      t.integer :gold
 
       t.timestamps
     end
