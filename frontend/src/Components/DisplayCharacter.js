@@ -137,7 +137,8 @@ class DisplayCharacter extends Component {
             items: this.state.equippedItems,
             hp: character.hp + job.hp + this.state.hp,
             atk: character.atk + job.atk + this.state.atk,
-            def: character.def + job.def + this.state.def
+            def: character.def + job.def + this.state.def,
+            gold: character.gold + job.gold,
         }
         const weapons = [...items].filter(item => item.item_type === "Weapon")
         const armor = [...items].filter(item => item.item_type === "Armor")
@@ -150,6 +151,7 @@ class DisplayCharacter extends Component {
                     <div>HP: {characterSelect.hp}</div>
                     <div>Atk: {characterSelect.atk}</div>
                     <div>Def: {characterSelect.def}</div>
+                    <div>Gold: {characterSelect.gold}</div>
                     <div className="select">
                         <button onClick={() => this.props.return()}>Go Back</button>
                         <br></br>

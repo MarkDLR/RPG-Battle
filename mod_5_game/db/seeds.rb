@@ -18,8 +18,8 @@ Player.destroy_all
 main = Player.create(username: "MarkDLR", password: "password")
 Player.create(username: "test", password: "other")
 
-knight = Job.create(name: "Knight", description: "You are a Noble Knight", img: "https://s-media-cache-ak0.pinimg.com/236x/c5/9c/25/c59c25e66d3a4b6ba706c55856cfded7.jpg", hp: 5, def: 10, atk: 5)
-barbarian = Job.create(name: "Barbarian", description: "You are a Ruthless Barbarian", img: "https://i.pinimg.com/474x/ef/74/26/ef742673fd9d5e7666400bd998ef3ff5.jpg", hp: 5, def: 5, atk: 10)
+knight = Job.create(name: "Knight", description: "You are a Noble Knight", img: "https://s-media-cache-ak0.pinimg.com/236x/c5/9c/25/c59c25e66d3a4b6ba706c55856cfded7.jpg", hp: 5, def: 10, atk: 5, gold: 15)
+barbarian = Job.create(name: "Barbarian", description: "You are a Ruthless Barbarian", img: "https://i.pinimg.com/474x/ef/74/26/ef742673fd9d5e7666400bd998ef3ff5.jpg", hp: 5, def: 5, atk: 10, gold: 15)
 
 lance = Character.create(player: main, name: "Lancelot", level: 1, job: knight, atk: 10, def: 10, hp: 10, gold: 15, exp: 0 )
 leif = Character.create(player: main, name: "Leif", level: 1, job: barbarian, atk: 10, def: 10, hp: 10, gold: 15, exp: 0 )

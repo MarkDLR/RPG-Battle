@@ -28,6 +28,7 @@ class CharacterCard extends React.Component{
                 <div>Job: {job.name}</div>
                 <div>Level: {character.level}</div>
                 <div>Exp: {character.exp}</div>
+                <div>Gold: {character.gold + job.gold } </div>
             </div>
             
         </div>
